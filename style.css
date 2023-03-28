@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'popins',sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f5fa;
+
+}
+
+.container section {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+
+/* first navigation bar  */
+
+.container .navbar_sec1 {
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 0 0 1em;
+    background: white;
+}
+
+.container .navbar_sec1 .part1,
+.part2 {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.container .navbar_sec1 .part1 {
+    width: 20%;
+}
+
+.container .navbar_sec1 .part1 .logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+}
+
+.container .navbar_sec1 .part1 .logo img {
+    width: 2.1rem;
+    height: 2.1rem;
+
+}
+
+.container .navbar_sec1 .part1 .logo h1 {
+
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.container .navbar_sec1 .part1 .browse {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+    font-size: .9rem;
+    font-family: "Open Sans", Roboto, sans-serif;
+    ;
+}
+
+.container .navbar_sec1 .part2 {
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.container .navbar_sec1 .part2 .search {
+    width: 22rem;
+    height: 2.3rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: .5rem; */
+    padding: 1rem;
+    background-color: rgb(242 245 250);
+
+    border-radius: 2rem;
+
+}
+
+.container .navbar_sec1 .part2 .search input {
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(242 245 250);
+    font-size: .9rem;
+
+
+}
+
+.container .navbar_sec1 .part2 .search i {
+    cursor: pointer;
+    font-size: .8rem;
+    color: #3c414a;
+}
+
+.container .navbar_sec1 .part2 .notification {
+    position: relative;
+}
+
+.container .navbar_sec1 .part2 .notification i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.container .navbar_sec1 .part2 .notification p {
+    position: absolute;
+    background-color: #f3912e;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: .2rem;
+    left: .9rem;
+    top: -.5rem;
+    height: 1rem;
+    padding: .2rem;
+    font-size: .6rem;
+    font-weight: 900;
+}
+
+.container .navbar_sec1 .part2 .profile_pic-1 {
+    width: 1.8rem;
+    height: 1.8rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .navbar_sec1 .part2 .profile_pic-1 img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .navbar_sec1 .part2 .points {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .navbar_sec1 .part2 .points img {
+    width: 1.2rem;
+    height: 1.2rem;
+
+}
+
+.container .navbar_sec1 .part2 .points p {
+    color: #f3912e;
+    font-weight: 900;
+}
+
+.container .navbar_sec1 .part2 .mode .checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.container .navbar_sec1 .part2 .mode .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 22px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .navbar_sec1 .part2 .mode .checkbox-label .ball {
+    background-color: #fff;
+    border: .25rem solid #f3912e;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: -1px;
+    /* top: 2px; */
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.container .navbar_sec1 .part2 .mode .checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+
+/* second navigation bar  */
+
+.container .navbar_sec2 {
+    background-image: url(ProfileCover.png);
+    width: 100%;
+    height: 7rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.container .navbar_sec2  .profile-cover {
+
+display: flex;
+
+align-items: center;
+
+width: 100%;
+
+height: 100%;
+
+padding: .5rem 4rem;
+
+gap: 2rem;
+
+border-bottom: 1px solid #00000021;
+
+background: linear-gradient(to right, whitesmoke, transparent, whitesmoke);
+}
+
+.container .navbar_sec2  .profile-cover .profile_pic-2 {
+    width: 4.5rem;
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container .navbar_sec2  .profile-cover  .profile_pic-2 img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .navbar_sec2  .profile-cover .profile_pic-2 .pen {
+  width: 2rem;
+  background: #202b47;
+  height: 2rem;
+  margin: top;
+  left: 1.25rem;
+  top: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  font-size: .9rem;
+
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details .profile_details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .25rem;
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details .profile_details h2{
+    font-family:'popins', sans-serif;
+    font-weight: 100;
+    font-size: 1.4rem;
+
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details .profile_details p{
+    font-family:'popins', sans-serif;
+    font-weight: 100;
+    font-size: .8rem;
+
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details .profile_details h1{
+    font-family:'popins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.container .navbar_sec2  .profile-cover .nav_profile_details .followers h1{
+    font-family:'popins', sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+
+/* about section */
+.container .info{
+
+    padding: 1rem 3rem;
+    overflow: hidden;
+
+}
+.container .info .top_hedding {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0rem;
+}
+.container .info .top_hedding h1 {
+    font-family: 'POPINS',sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+   
+}
+.container .info .top_hedding button {
+    font-family: 'POPINS',sans-serif;
+    /* padding: .5rem ; */
+    width: 5rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    height: 1.8rem;
+    background-color: #f3912e;
+    color: whitesmoke;
+}
+
+.imp_dtls{
+    /* padding:1rem 2.5rem; */
+    margin: .5rem;
+}
+
+.about_me_input{
+    width: 100%;
+    height: 10rem;
+    /* background-color: #1 11; */
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.about_me_input textarea{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* web section  */
+
+.web_links_box,.Professional_Information{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* gap: 3REM; */
+    flex-wrap: wrap;
+
+
+}
+.web_links_box .web_link{
+    width:45%;
+    padding: .5REM  0REM;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+}
+.web_links_box .web_link .input{
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    /* padding: .1rem .2rem; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .5rem;
+overflow: hidden;
+}
+.web_links_box .web_link   label{
+    text-transform: capitalize;
+    padding: .5rem 0;
+
+}
+.web_links_box .web_link .input input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0rem .5rem;
+}
+.web_links_box .web_link .input i{
+    left: 1rem;
+    padding: .5rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    color: #808191;
+    overflow: hidden;
+}
+    .web_links_box .web_link .input .fa-pen{
+        /* position: absolute; */
+        font-size: 1rem;
+    }
+    .Professional_Information .Profession{
+        width:45%;
+        /* padding: .5REM  0REM; */
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
+    .Professional_Information .Profession label{
+        text-transform: capitalize;
+        padding: .5rem 0;
+    
+    }
+    select{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 0rem .5rem;
+        width: 100%;
+        height: 3rem;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        /* padding: .1rem .2rem; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: .5rem;
+    overflow: hidden;
+    
+    }
+    .password_sec{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+    .password_sec label{
+        text-transform: capitalize;
+        padding: .5rem;
+    }
+    .password_sec input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding: 0rem 1rem;
+            width: 100%;
+            height: 3rem;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: .5rem;
+        overflow: hidden;
+        
+    }
+    .underline{
+        border-bottom: .1rem solid rgba(155, 154, 154, 0.306);
+        width: 93%;
+        border-radius: .2rem;
+        padding: 0 1rem;
+        z-index: 1;
+        /* position: absolute; */
+    
+    }
+    .intrest h1{
+        padding: .5rem .5rem   ;
+        width: 10rem;
+        font-size: 1rem ;
+        border-radius: .5rem;
+        background-color: #f2ebe6;
+        text-transform: capitalize;
+        color: #f3912e;
+        font-weight: 600;
+
+
+    }
